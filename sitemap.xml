@@ -69,6 +69,22 @@
   </url>
 
   <!-- ══════════════════════════════════════════════════
+       BLOG POST — WHY IS MY WEBSITE NOT RANKING  |  Priority: 0.85  |  Crawl: Monthly
+       Informational SEO guide targeting high-volume ranking queries
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/why-is-my-website-not-ranking-on-google.html</loc>
+    <lastmod>2026-05-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>Why Is My Website Not Ranking on Google? (2026 Complete Fix Guide)</image:title>
+      <image:caption>Expert SEO guide covering every reason websites fail to rank in 2026 — technical issues, content quality, backlinks, Core Web Vitals — with step-by-step fixes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════
        PRIVACY POLICY  |  Priority: 0.3  |  Crawl: Yearly
   ══════════════════════════════════════════════════ -->
   <url>
