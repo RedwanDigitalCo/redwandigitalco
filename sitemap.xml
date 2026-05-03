@@ -3,7 +3,7 @@
   ╔══════════════════════════════════════════════════════╗
   ║         REDWAN DIGITALCO — XML SITEMAP               ║
   ║         https://redwandigital.com/                   ║
-  ║         Generated: 2026-05-03                        ║
+  ║         Generated: 2026-05-04                        ║
   ║         Standard: sitemaps.org protocol 0.9          ║
   ╚══════════════════════════════════════════════════════╝
 -->
@@ -113,6 +113,22 @@
       <image:loc>https://redwandigital.com/og-image.png</image:loc>
       <image:title>What Is Technical SEO? Everything You Need to Know (2026 Guide)</image:title>
       <image:caption>Complete technical SEO guide for 2026 — crawlability, Core Web Vitals, site speed, structured data, mobile SEO, and step-by-step audit instructions.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — HOW TO BUILD BACKLINKS IN 2026  |  Priority: 0.85  |  Crawl: Monthly
+       Informational SEO guide targeting backlink building queries
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/how-to-build-backlinks-in-2026.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>How to Build Backlinks in 2026 for Beginners (Easy Step-by-Step Guide)</image:title>
+      <image:caption>Beginner-friendly backlink building guide for 2026. Simple, free, and proven link building strategies for new websites and small businesses.</image:caption>
     </image:image>
   </url>
 
