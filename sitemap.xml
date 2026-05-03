@@ -101,6 +101,22 @@
   </url>
 
   <!-- ══════════════════════════════════════════════════
+       BLOG POST — WHAT IS TECHNICAL SEO  |  Priority: 0.85  |  Crawl: Monthly
+       Informational SEO guide targeting technical SEO queries
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/what-is-technical-seo.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>What Is Technical SEO? Everything You Need to Know (2026 Guide)</image:title>
+      <image:caption>Complete technical SEO guide for 2026 — crawlability, Core Web Vitals, site speed, structured data, mobile SEO, and step-by-step audit instructions.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════
        PRIVACY POLICY  |  Priority: 0.3  |  Crawl: Yearly
   ══════════════════════════════════════════════════ -->
   <url>
