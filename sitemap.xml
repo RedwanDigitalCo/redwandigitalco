@@ -3,7 +3,7 @@
   ╔══════════════════════════════════════════════════════╗
   ║         REDWAN DIGITALCO — XML SITEMAP               ║
   ║         https://redwandigital.com/                   ║
-  ║         Generated: 2026-04-30                        ║
+  ║         Generated: 2026-05-03                        ║
   ║         Standard: sitemaps.org protocol 0.9          ║
   ╚══════════════════════════════════════════════════════╝
 -->
@@ -81,6 +81,22 @@
       <image:loc>https://redwandigital.com/og-image.png</image:loc>
       <image:title>Why Is My Website Not Ranking on Google? (2026 Complete Fix Guide)</image:title>
       <image:caption>Expert SEO guide covering every reason websites fail to rank in 2026 — technical issues, content quality, backlinks, Core Web Vitals — with step-by-step fixes.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — HOW TO DO KEYWORD RESEARCH  |  Priority: 0.85  |  Crawl: Monthly
+       Informational SEO guide targeting keyword research queries
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/how-to-do-keyword-research.html</loc>
+    <lastmod>2026-05-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>How to Do Keyword Research in 2026 (Complete Beginner's Guide)</image:title>
+      <image:caption>Step-by-step keyword research guide for 2026. Learn how to find low-competition, high-volume keywords that rank fast — free tools included.</image:caption>
     </image:image>
   </url>
 
