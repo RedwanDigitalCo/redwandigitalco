@@ -38,7 +38,6 @@
 
   <!-- ══════════════════════════════════════════════════
        SEO SERVICES PAGE  |  Priority: 0.95  |  Crawl: Weekly
-       Dedicated SEO service page — high value keyword target
   ══════════════════════════════════════════════════ -->
   <url>
     <loc>https://redwandigital.com/seo-services.html</loc>
@@ -54,7 +53,6 @@
 
   <!-- ══════════════════════════════════════════════════
        SOCIAL MEDIA MARKETING PAGE  |  Priority: 0.95  |  Crawl: Weekly
-       Dedicated SMM page — high value keyword target
   ══════════════════════════════════════════════════ -->
   <url>
     <loc>https://redwandigital.com/social-media-marketing.html</loc>
@@ -70,7 +68,6 @@
 
   <!-- ══════════════════════════════════════════════════
        BLOG POST — WHY IS MY WEBSITE NOT RANKING  |  Priority: 0.85  |  Crawl: Monthly
-       Informational SEO guide targeting high-volume ranking queries
   ══════════════════════════════════════════════════ -->
   <url>
     <loc>https://redwandigital.com/why-is-my-website-not-ranking-on-google.html</loc>
@@ -86,7 +83,6 @@
 
   <!-- ══════════════════════════════════════════════════
        BLOG POST — HOW TO DO KEYWORD RESEARCH  |  Priority: 0.85  |  Crawl: Monthly
-       Informational SEO guide targeting keyword research queries
   ══════════════════════════════════════════════════ -->
   <url>
     <loc>https://redwandigital.com/how-to-do-keyword-research.html</loc>
@@ -102,7 +98,6 @@
 
   <!-- ══════════════════════════════════════════════════
        BLOG POST — WHAT IS TECHNICAL SEO  |  Priority: 0.85  |  Crawl: Monthly
-       Informational SEO guide targeting technical SEO queries
   ══════════════════════════════════════════════════ -->
   <url>
     <loc>https://redwandigital.com/what-is-technical-seo.html</loc>
@@ -118,7 +113,6 @@
 
   <!-- ══════════════════════════════════════════════════
        BLOG POST — HOW TO BUILD BACKLINKS IN 2026  |  Priority: 0.85  |  Crawl: Monthly
-       Informational SEO guide targeting backlink building queries
   ══════════════════════════════════════════════════ -->
   <url>
     <loc>https://redwandigital.com/how-to-build-backlinks-in-2026.html</loc>
@@ -129,6 +123,22 @@
       <image:loc>https://redwandigital.com/og-image.png</image:loc>
       <image:title>How to Build Backlinks in 2026 for Beginners (Easy Step-by-Step Guide)</image:title>
       <image:caption>Beginner-friendly backlink building guide for 2026. Simple, free, and proven link building strategies for new websites and small businesses.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — LOCAL SEO GUIDE  |  Priority: 0.85  |  Crawl: Monthly
+       New page targeting local SEO keywords — Google Maps ranking guide
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/local-seo-guide.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>Local SEO Guide 2026: Rank Your Business on Google Maps</image:title>
+      <image:caption>Complete local SEO guide for 2026 — Google Business Profile optimization, local citations, reviews, and how to rank in the Google Maps top 3.</image:caption>
     </image:image>
   </url>
 
