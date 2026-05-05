@@ -152,4 +152,25 @@
     <priority>0.3</priority>
   </url>
 
+
+  <!-- BLOG INDEX -->
+  <url>
+    <loc>https://redwandigital.com/blog.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- BLOG POST: Best SEO Tools 2026 -->
+  <url>
+    <loc>https://redwandigital.com/best-seo-tools-2026.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>Best SEO Tools for Beginners in 2026 — Redwan DigitalCo</image:title>
+    </image:image>
+  </url>
+
 </urlset>

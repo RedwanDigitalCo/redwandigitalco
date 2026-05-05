@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Blog — Digital Marketing & SEO Tips | Redwan DigitalCo</title>
+<meta name="description" content="Free digital marketing and SEO tips, guides, and tool reviews from Redwan DigitalCo. Learn SEO, content marketing, backlinks, and more.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://redwandigital.com/blog.html">
+<meta property="og:title" content="Blog — Digital Marketing & SEO Tips | Redwan DigitalCo">
+<meta property="og:description" content="Free SEO guides, tool reviews, and digital marketing tips from Redwan DigitalCo.">
+<meta property="og:url" content="https://redwandigital.com/blog.html">
+<meta property="og:image" content="https://redwandigital.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@RedwanDigitalCo">
+<meta name="twitter:creator" content="@RedwanDigitalCo">
+<meta name="twitter:title" content="Blog — Digital Marketing & SEO Tips | Redwan DigitalCo">
+<meta name="twitter:description" content="Free SEO guides, tool reviews, and digital marketing tips from Redwan DigitalCo. Learn SEO, content marketing, backlinks, and more.">
+<meta name="twitter:image" content="https://redwandigital.com/og-image.png">
+<link rel="icon" href="/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+--blue: #1a6fff;
+--blue-bright: #3d8eff;
+--blue-glow: #2979ff;
+--dark: #050812;
+--dark2: #080e1f;
+--dark3: #0b1530;
+--white: #f0f4ff;
+--grey: #8a96b0;
+--accent: #00d4ff;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--dark); color: var(--white); font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+
+/* NAV */
+nav {
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+display: flex; align-items: center; justify-content: space-between;
+padding: 22px 60px;
+background: rgba(5,8,18,0.6); backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(26,111,255,0.12);
+}
+.nav-logo {
+font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; letter-spacing: 3px;
+background: linear-gradient(135deg, #fff 40%, var(--blue-bright));
+-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+text-decoration: none;
+}
+.nav-logo span { color: var(--blue-bright); -webkit-text-fill-color: var(--blue-bright); }
+.nav-links { display: flex; gap: 40px; list-style: none; }
+.nav-links a {
+text-decoration: none; color: var(--grey);
+font-family: 'Syne', sans-serif; font-size: 0.82rem; font-weight: 600;
+letter-spacing: 2px; text-transform: uppercase; transition: color 0.3s; position: relative;
+}
+.nav-links a::after {
+content: ''; position: absolute; bottom: -4px; left: 0;
+width: 0; height: 1px; background: var(--blue-bright); transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--white); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--white); }
+.nav-links a.active::after { width: 100%; }
+.nav-cta {
+padding: 10px 26px; border: 1px solid var(--blue);
+color: var(--blue-bright) !important; border-radius: 2px;
+-webkit-text-fill-color: var(--blue-bright) !important;
+transition: background 0.3s, color 0.3s !important;
+}
+.nav-cta:hover { background: var(--blue) !important; color: #fff !important; -webkit-text-fill-color: #fff !important; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+.hamburger span { width: 25px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; }
+
+/* HERO */
+.blog-hero {
+padding: 160px 60px 80px;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+.blog-hero::before {
+content: '';
+position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+width: 600px; height: 300px;
+background: radial-gradient(ellipse, rgba(26,111,255,0.15) 0%, transparent 70%);
+pointer-events: none;
+}
+.blog-hero-label {
+font-family: 'Syne', sans-serif; font-size: 0.78rem; font-weight: 700;
+letter-spacing: 4px; text-transform: uppercase; color: var(--blue-bright);
+margin-bottom: 20px;
+}
+.blog-hero h1 {
+font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 7vw, 5.5rem);
+line-height: 1; letter-spacing: 2px;
+background: linear-gradient(135deg, #fff 40%, var(--accent));
+-webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+margin-bottom: 20px;
+}
+.blog-hero p {
+font-size: 1.1rem; color: var(--grey); max-width: 540px; margin: 0 auto;
+}
+
+/* FILTER TABS */
+.filter-bar {
+display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+padding: 0 60px 60px;
+}
+.filter-btn {
+font-family: 'Syne', sans-serif; font-size: 0.78rem; font-weight: 700;
+letter-spacing: 2px; text-transform: uppercase;
+padding: 9px 22px; border-radius: 2px; cursor: pointer;
+border: 1px solid rgba(26,111,255,0.3); background: transparent;
+color: var(--grey); transition: all 0.3s;
+}
+.filter-btn:hover, .filter-btn.active {
+background: var(--blue); border-color: var(--blue); color: #fff;
+}
+
+/* BLOG GRID */
+.blog-section { padding: 0 60px 100px; max-width: 1200px; margin: 0 auto; }
+.blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+.blog-card {
+background: var(--dark2); border: 1px solid rgba(26,111,255,0.12);
+border-radius: 4px; overflow: hidden; transition: transform 0.3s, border-color 0.3s;
+text-decoration: none; color: inherit; display: flex; flex-direction: column;
+}
+.blog-card:hover { transform: translateY(-6px); border-color: rgba(26,111,255,0.4); }
+.blog-card.featured { grid-column: span 2; }
+
+.card-badge {
+display: inline-block; font-family: 'Syne', sans-serif;
+font-size: 0.68rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+padding: 5px 12px; border-radius: 2px; margin-bottom: 16px;
+}
+.badge-seo { background: rgba(26,111,255,0.15); color: var(--blue-bright); }
+.badge-affiliate { background: rgba(0,212,255,0.15); color: var(--accent); }
+.badge-local { background: rgba(26,111,255,0.1); color: var(--blue-bright); }
+.badge-tools { background: rgba(0,212,255,0.12); color: var(--accent); }
+
+.card-body { padding: 28px; flex: 1; display: flex; flex-direction: column; }
+.card-body h2 {
+font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 800;
+color: var(--white); margin-bottom: 12px; line-height: 1.4;
+}
+.blog-card.featured .card-body h2 { font-size: 1.45rem; }
+.card-body p { color: var(--grey); font-size: 0.92rem; line-height: 1.7; flex: 1; }
+
+.card-meta {
+display: flex; align-items: center; justify-content: space-between;
+margin-top: 20px; padding-top: 16px;
+border-top: 1px solid rgba(26,111,255,0.1);
+}
+.card-date { font-size: 0.78rem; color: var(--grey); font-family: 'Syne', sans-serif; letter-spacing: 1px; }
+.card-read {
+font-family: 'Syne', sans-serif; font-size: 0.75rem; font-weight: 700;
+letter-spacing: 2px; text-transform: uppercase; color: var(--blue-bright);
+display: flex; align-items: center; gap: 6px;
+}
+.card-read::after { content: '→'; transition: transform 0.3s; }
+.blog-card:hover .card-read::after { transform: translateX(4px); }
+
+.card-top-bar {
+height: 3px;
+background: linear-gradient(90deg, var(--blue), var(--accent));
+}
+.card-top-bar.green { background: linear-gradient(90deg, #00d4ff, #1a6fff); }
+
+/* FOOTER */
+footer {
+border-top: 1px solid rgba(26,111,255,0.12);
+padding: 40px 60px;
+display: flex; justify-content: space-between; align-items: center;
+}
+footer p { color: var(--grey); font-size: 0.85rem; }
+footer a { color: var(--blue-bright); text-decoration: none; }
+
+/* MOBILE */
+@media (max-width: 900px) {
+nav { padding: 18px 30px; }
+.nav-links { gap: 24px; }
+.blog-hero { padding: 130px 30px 60px; }
+.filter-bar { padding: 0 30px 40px; }
+.blog-section { padding: 0 30px 80px; }
+.blog-grid { grid-template-columns: 1fr; }
+.blog-card.featured { grid-column: span 1; }
+footer { flex-direction: column; gap: 16px; padding: 30px; text-align: center; }
+}
+@media (max-width: 768px) {
+.nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+background: rgba(5,8,18,0.97); flex-direction: column; align-items: center;
+justify-content: center; gap: 36px; z-index: 99; }
+.nav-links.open { display: flex; }
+.nav-links.open a { font-size: 1.2rem; }
+.hamburger { display: flex; z-index: 100; }
+}
+</style>
+</head>
+<body>
+
+<nav role="navigation" aria-label="Main navigation">
+<a href="/" class="nav-logo">REDWAN <span>DIGITALCO</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a href="/">Home</a></li>
+<li><a href="seo-services.html">SEO Services</a></li>
+<li><a href="social-media-marketing.html">Social Media</a></li>
+<li><a href="blog.html" class="active">Blog</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/#contact" class="nav-cta">Contact</a></li>
+</ul>
+<div class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu" role="button" tabindex="0">
+<span></span><span></span><span></span>
+</div>
+</nav>
+
+<section class="blog-hero">
+<p class="blog-hero-label">Free Guides & Resources</p>
+<h1>THE BLOG</h1>
+<p>SEO tips, tool reviews, and digital marketing strategies — written for beginners and small businesses.</p>
+</section>
+
+<div class="filter-bar">
+<button class="filter-btn active">All Posts</button>
+<button class="filter-btn">SEO</button>
+<button class="filter-btn">Tools</button>
+<button class="filter-btn">Local SEO</button>
+</div>
+
+<section class="blog-section">
+<div class="blog-grid">
+
+  <!-- FEATURED: Affiliate Post -->
+  <a href="best-seo-tools-2026.html" class="blog-card featured">
+    <div class="card-top-bar"></div>
+    <div class="card-body">
+      <span class="card-badge badge-affiliate">⭐ Top Pick</span>
+      <h2>Best SEO Tools for Beginners in 2026 (Tested & Ranked)</h2>
+      <p>We tested Semrush, Ahrefs, Mangools, and more so you don't have to. Find out which SEO tool is actually worth your money in 2026 — with honest pros, cons, and pricing breakdowns.</p>
+      <div class="card-meta">
+        <span class="card-date">May 2026</span>
+        <span class="card-read">Read Now</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Post 3 -->
+  <a href="how-to-do-keyword-research.html" class="blog-card">
+    <div class="card-top-bar green"></div>
+    <div class="card-body">
+      <span class="card-badge badge-seo">SEO</span>
+      <h2>How to Do Keyword Research in 2026 (Complete Beginner's Guide)</h2>
+      <p>Step-by-step guide to finding low-competition, high-volume keywords that rank fast — free tools and proven strategies included.</p>
+      <div class="card-meta">
+        <span class="card-date">May 2026</span>
+        <span class="card-read">Read Now</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Post 4 -->
+  <a href="how-to-build-backlinks-in-2026.html" class="blog-card">
+    <div class="card-top-bar"></div>
+    <div class="card-body">
+      <span class="card-badge badge-seo">SEO</span>
+      <h2>How to Build Backlinks in 2026 for Beginners</h2>
+      <p>A beginner-friendly guide to building backlinks using simple, free, and proven link building strategies for small websites.</p>
+      <div class="card-meta">
+        <span class="card-date">May 2026</span>
+        <span class="card-read">Read Now</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Post 5 -->
+  <a href="local-seo-guide.html" class="blog-card">
+    <div class="card-top-bar green"></div>
+    <div class="card-body">
+      <span class="card-badge badge-local">Local SEO</span>
+      <h2>Local SEO Guide: Rank Your Business in Your City</h2>
+      <p>Everything you need to know about local SEO — Google Business Profile, local citations, and ranking strategies for small businesses.</p>
+      <div class="card-meta">
+        <span class="card-date">May 2026</span>
+        <span class="card-read">Read Now</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Post 6 -->
+  <a href="what-is-technical-seo.html" class="blog-card">
+    <div class="card-top-bar"></div>
+    <div class="card-body">
+      <span class="card-badge badge-seo">Technical SEO</span>
+      <h2>What Is Technical SEO? Everything You Need to Know (2026)</h2>
+      <p>A complete beginner-to-advanced guide covering crawlability, indexing, Core Web Vitals, site speed, and structured data with actionable fixes.</p>
+      <div class="card-meta">
+        <span class="card-date">May 2026</span>
+        <span class="card-read">Read Now</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Post 7 -->
+  <a href="why-is-my-website-not-ranking-on-google.html" class="blog-card">
+    <div class="card-top-bar green"></div>
+    <div class="card-body">
+      <span class="card-badge badge-seo">SEO</span>
+      <h2>Why Is My Website Not Ranking on Google?</h2>
+      <p>The most common reasons your website isn't showing up on Google — and exactly how to fix each one step by step.</p>
+      <div class="card-meta">
+        <span class="card-date">May 2026</span>
+        <span class="card-read">Read Now</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Redwan DigitalCo — <a href="/">redwandigital.com</a></p>
+<p><a href="privacy-policy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('navLinks').classList.remove('open');
+}
+// Filter buttons
+const filterMap = {
+  'All Posts': null,
+  'SEO': ['seo','technical seo'],
+  'Tools': ['top pick'],
+  'Local SEO': ['local seo']
+};
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const keywords = filterMap[this.textContent];
+    document.querySelectorAll('.blog-card').forEach(card => {
+      if (!keywords) { card.style.display = ''; return; }
+      const badge = card.querySelector('.card-badge')?.textContent?.toLowerCase() || '';
+      card.style.display = keywords.some(k => badge.includes(k)) ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
