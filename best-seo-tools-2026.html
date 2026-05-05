@@ -133,13 +133,18 @@ font-size: 1.05rem; line-height: 1.8; color: var(--white);
 /* TOC */
 .toc {
 background: var(--dark3); border: 1px solid rgba(26,111,255,0.15);
-border-radius: 4px; padding: 24px 28px; margin-bottom: 48px;
+border-radius: 4px; padding: 16px 24px; margin-bottom: 48px;
 }
-.toc h3 {
-font-family: 'Syne', sans-serif; font-size: 0.8rem; font-weight: 700;
-letter-spacing: 3px; text-transform: uppercase; color: var(--blue-bright); margin-bottom: 14px;
+.toc summary {
+cursor: pointer; list-style: none; display: flex; align-items: center;
+justify-content: space-between; font-family: 'Syne', sans-serif;
+font-size: 0.8rem; font-weight: 700; letter-spacing: 3px;
+text-transform: uppercase; color: var(--blue-bright);
 }
-.toc ol { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: '+'; font-size: 1.2rem; color: var(--blue-bright); }
+.toc[open] summary::after { content: '−'; }
+.toc ol { padding: 14px 0 4px 20px; display: flex; flex-direction: column; gap: 8px; }
 .toc li a { color: var(--grey); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
 .toc li a:hover { color: var(--white); }
 
@@ -305,12 +310,8 @@ footer { flex-direction: column; gap: 14px; padding: 28px 24px; text-align: cent
   <span>🔖 <a href="blog.html" style="color:var(--blue-bright);text-decoration:none;">SEO Tools</a></span>
 </div>
 
-<div class="intro-box">
-Choosing the wrong SEO tool wastes money. I've personally tested the most popular options so you can make a smart decision — whether you're a complete beginner, a blogger, or a small business owner trying to rank on Google in 2026.
-</div>
-
-<nav class="toc" aria-label="Table of contents">
-<h3>📋 Table of Contents</h3>
+<details class="toc" aria-label="Table of contents">
+<summary><h3 style="display:inline;">📋 Table of Contents</h3></summary>
 <ol>
   <li><a href="#what">What Makes a Good SEO Tool?</a></li>
   <li><a href="#semrush">1. Semrush — Best All-in-One</a></li>
@@ -320,7 +321,11 @@ Choosing the wrong SEO tool wastes money. I've personally tested the most popula
   <li><a href="#comparison">Side-by-Side Comparison</a></li>
   <li><a href="#verdict">Final Verdict — Which Should You Buy?</a></li>
 </ol>
-</nav>
+</details>
+
+<div class="intro-box">
+Choosing the wrong SEO tool wastes money. I've personally tested the most popular options so you can make a smart decision — whether you're a complete beginner, a blogger, or a small business owner trying to rank on Google in 2026.
+</div>
 
 <h2 id="what">What Makes a Good SEO Tool?</h2>
 <p>Before we dive in, here's what I looked for when testing these tools:</p>
