@@ -3,7 +3,7 @@
   ╔══════════════════════════════════════════════════════╗
   ║         REDWAN DIGITALCO — XML SITEMAP               ║
   ║         https://redwandigital.com/                   ║
-  ║         Generated: 2026-05-04                        ║
+  ║         Generated: 2026-05-06                        ║
   ║         Standard: sitemaps.org protocol 0.9          ║
   ╚══════════════════════════════════════════════════════╝
 -->
@@ -164,6 +164,22 @@
     <image:image>
       <image:loc>https://redwandigital.com/og-image.png</image:loc>
       <image:title>Best SEO Tools for Beginners in 2026 — Redwan DigitalCo</image:title>
+    </image:image>
+  </url>
+
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — DIGITAL MARKETING COST BANGLADESH  |  Priority: 0.9  |  Crawl: Monthly
+       High buyer-intent pricing guide targeting low-KD commercial keywords
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/digital-marketing-cost-bangladesh-2026.html</loc>
+    <lastmod>2026-05-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>How Much Does Digital Marketing Cost in Bangladesh? (2026 Pricing Guide)</image:title>
+      <image:caption>Honest 2026 pricing guide for digital marketing services in Bangladesh — SEO packages, Facebook Ads, Google Ads, and web design costs explained for Dhaka small businesses.</image:caption>
     </image:image>
   </url>
 
