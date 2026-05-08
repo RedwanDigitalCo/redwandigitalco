@@ -907,6 +907,7 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 gap: 80px;
 align-items: center;
+overflow: hidden;
 }
 .why-visual { position: relative; height: 500px; perspective: 1200px; }
 .why-orb { position: absolute; border-radius: 50%; filter: blur(60px); }
@@ -1372,7 +1373,11 @@ transition: all 0.3s;
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 .services-grid { grid-template-columns: 1fr; }
+.areas-grid { grid-template-columns: 1fr !important; }
 .process-steps { grid-template-columns: 1fr; }
+.testimonials-grid-home { grid-template-columns: 1fr !important; }
+.why-visual { display: none; }
+#why { grid-template-columns: 1fr !important; gap: 0 !important; }
 .services-header { flex-direction: column; align-items: flex-start; }
 .footer-inner { flex-direction: column; align-items: flex-start; }
 .wa-float { bottom: 20px; right: 20px; width: 52px; height: 52px; }
@@ -1791,6 +1796,8 @@ Active & Accepting Clients
 </section>
 
 <style>
+.areas-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.testimonials-grid-home { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
 @media(max-width:900px){.blog-home-grid{grid-template-columns:1fr !important;} .blog-home-grid a[style*="span 2"]{grid-column:span 1 !important;}}
 </style>
 
@@ -1803,7 +1810,7 @@ Active & Accepting Clients
     <h2 id="areas-heading" class="section-title">DIGITAL MARKETING ACROSS ALL OF <span class="highlight">MIRPUR, DHAKA</span></h2>
     <p class="section-sub" style="margin:0 auto;max-width:620px;">We provide affordable SEO, social media marketing, and digital marketing services across every section of Mirpur, Dhaka — your local growth partner right in your neighbourhood.</p>
   </div>
-  <div class="services-grid reveal" style="grid-template-columns:repeat(3,1fr);gap:2px;" itemscope itemtype="https://schema.org/Service">
+  <div class="services-grid areas-grid" style="gap:2px;" itemscope itemtype="https://schema.org/Service">
     <article class="service-card reveal" itemprop="areaServed" itemscope itemtype="https://schema.org/City">
       <div class="service-num">01</div>
       <div class="service-icon" aria-hidden="true">📍</div>
@@ -1913,7 +1920,7 @@ Active & Accepting Clients
     <h2 id="testimonials-heading" class="section-title">WHAT CLIENTS <span class="highlight">SAY</span></h2>
     <p class="section-sub">Real results from real businesses in Bangladesh. 47 clients reviewed — 4.9★ average rating.</p>
   </div>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;" class="testimonials-grid-home">
+  <div class="testimonials-grid-home">
     <div class="service-card reveal" itemscope itemtype="https://schema.org/Review">
       <div itemprop="itemReviewed" itemscope itemtype="https://schema.org/LocalBusiness" style="display:none;">
         <span itemprop="name">Redwan DigitalCo</span>
@@ -1966,7 +1973,7 @@ Active & Accepting Clients
       </div>
     </div>
   </div>
-  <style>@media(max-width:640px){.testimonials-grid-home{grid-template-columns:1fr !important;}}</style>
+  
   <div class="reveal" style="text-align:center;margin-top:40px;">
     <a href="https://share.google/daDdhOPI0o1226Abu" target="_blank" rel="noopener noreferrer" style="font-family:'Syne',sans-serif;font-size:0.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--blue-bright);text-decoration:none;">See All 47 Reviews on Google →</a>
   </div>
@@ -2265,7 +2272,7 @@ setTimeout(() => e.target.classList.add('visible'), i * 80);
 observer.unobserve(e.target);
 }
 });
-}, { threshold: 0.1 });
+}, { threshold: 0, rootMargin: '0px 0px -50px 0px' });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 /* ── 3D TILT ── */
 document.querySelectorAll('.service-card, .why-stat, .contact-item').forEach(card => {
