@@ -379,8 +379,8 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-FF5001EXX3');
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init('oFx3_6naahpCXtZCV');</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+<script>window.addEventListener('load', function(){ if(window.emailjs) emailjs.init('oFx3_6naahpCXtZCV'); });</script>
 <link rel="sitemap" type="application/xml" href="https://redwandigital.com/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -2191,11 +2191,15 @@ if (!isOpen) item.classList.add('open');
 }
 /* ── PARTICLE / GRID CANVAS ── */
 const canvas = document.getElementById('bg-canvas');
+const isMobile = window.innerWidth < 768;
+if (isMobile) {
+  canvas.style.display = 'none';
+} else {
 const ctx = canvas.getContext('2d');
 canvas.style.willChange = 'transform';
 let W, H, particles = [];
 let lastTime = 0;
-const TARGET_FPS = 30;
+const TARGET_FPS = 24;
 const FRAME_INTERVAL = 1000 / TARGET_FPS;
 function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
 resize();
@@ -2224,7 +2228,7 @@ ctx.fill();
 }
 function initParticles() {
 particles = [];
-const count = Math.min(Math.floor(W * H / 12000), 120);
+const count = Math.min(Math.floor(W * H / 20000), 60);
 for (let i = 0; i < count; i++) particles.push(new Particle());
 }
 initParticles();
@@ -2242,14 +2246,14 @@ const len = particles.length;
 for (let i = 0; i < len; i++) {
 for (let j = i+1; j < len; j++) {
 const dx = particles[i].x - particles[j].x;
-if (Math.abs(dx) > 130) continue;
+if (Math.abs(dx) > 100) continue;
 const dy = particles[i].y - particles[j].y;
 const dist = Math.sqrt(dx*dx + dy*dy);
-if (dist < 130) {
+if (dist < 100) {
 ctx.beginPath();
 ctx.moveTo(particles[i].x, particles[i].y);
 ctx.lineTo(particles[j].x, particles[j].y);
-ctx.strokeStyle = `rgba(41,121,255,${0.12*(1-dist/130)})`;
+ctx.strokeStyle = `rgba(41,121,255,${0.12*(1-dist/100)})`;
 ctx.lineWidth = 0.6;
 ctx.stroke();
 }
@@ -2264,6 +2268,7 @@ grd2.addColorStop(0, 'rgba(0,212,255,0.05)'); grd2.addColorStop(1, 'transparent'
 ctx.fillStyle = grd2; ctx.fillRect(0,0,W,H);
 }
 animate(0);
+}
 /* ── SCROLL REVEAL ── */
 const observer = new IntersectionObserver((entries) => {
 entries.forEach((e, i) => {
@@ -2295,11 +2300,16 @@ card.addEventListener('mouseleave', () => { card.style.transform = ''; });
 });
 /* ── HERO CARD PARALLAX ── */
 const heroCard = document.querySelector('.card-inner');
+let mouseTicking = false;
 document.addEventListener('mousemove', e => {
-if (!heroCard) return;
+if (!heroCard || mouseTicking) return;
+mouseTicking = true;
+requestAnimationFrame(() => {
 const x = (e.clientX / window.innerWidth - 0.5) * 20;
 const y = (e.clientY / window.innerHeight - 0.5) * 14;
 heroCard.style.transform = `rotateX(${8-y}deg) rotateY(${-18+x}deg)`;
+mouseTicking = false;
+});
 });
 /* ── NAV SCROLL ── */
 const nav = document.querySelector('nav');
@@ -2355,7 +2365,7 @@ if (target) target.scrollIntoView({ behavior: 'smooth' });
 });
 });
 /* ── GA4 KEY EVENTS ── */
-
+setTimeout(function() {
 // 1. WhatsApp — floating button
 document.querySelector('.wa-float').addEventListener('click', () => {
   gtag('event', 'whatsapp_click', { event_category: 'lead', event_label: 'floating_button' });
@@ -2474,6 +2484,7 @@ document.querySelectorAll('a.social-btn[href^="mailto"]').forEach(link => {
     gtag('event', 'email_click', { event_category: 'lead', event_label: 'footer_social_btn' });
   });
 });
+}, 2000);
 </script>
 </body>
 </html>
