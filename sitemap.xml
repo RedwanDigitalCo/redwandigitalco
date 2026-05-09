@@ -150,7 +150,7 @@
   <!-- BLOG INDEX -->
   <url>
     <loc>https://redwandigital.com/blog.html</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -180,6 +180,23 @@
       <image:loc>https://redwandigital.com/og-image.png</image:loc>
       <image:title>How Much Does Digital Marketing Cost in Bangladesh? (2026 Pricing Guide)</image:title>
       <image:caption>Honest 2026 pricing guide for digital marketing services in Bangladesh — SEO packages, Facebook Ads, Google Ads, and web design costs explained for Dhaka small businesses.</image:caption>
+    </image:image>
+  </url>
+
+
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — WEBSITE DESIGN COST BANGLADESH  |  Priority: 0.95  |  Crawl: Weekly
+       High buyer-intent pricing guide targeting web design cost keywords in Dhaka
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/website-design-cost-bangladesh-2026.html</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>Website Design Cost in Bangladesh 2026 — Full BDT Pricing Guide</image:title>
+      <image:caption>Honest 2026 BDT pricing for website design in Bangladesh — static sites, WordPress business websites, and e-commerce stores explained for Mirpur and Dhaka small business owners.</image:caption>
     </image:image>
   </url>
 
