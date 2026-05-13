@@ -200,4 +200,20 @@
     </image:image>
   </url>
 
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — SEO AGENCY MIRPUR  |  Priority: 0.85  |  Crawl: Monthly
+       Local SEO landing/blog page targeting Mirpur-specific search queries
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/seo-agency-mirpur.html</loc>
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>Best SEO Agency in Mirpur Dhaka 2026 — Redwan DigitalCo</image:title>
+      <image:caption>Results-driven SEO agency in Mirpur, Dhaka. Local SEO, on-page SEO, and link building for Mirpur businesses. Free audit available.</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
