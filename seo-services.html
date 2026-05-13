@@ -67,7 +67,7 @@
 "breadcrumb": {"@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"name": "Home","item": "https://redwandigital.com/"},{"@type": "ListItem","position": 2,"name": "SEO Services","item": "https://redwandigital.com/seo-services.html"}]},
 "about": {"@type": "Service","name": "SEO Service Bangladesh"},
 "datePublished": "2026-01-01",
-"dateModified": "2026-05-01"
+"dateModified": "2026-05-13"
 }
 </script>
 
@@ -247,7 +247,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:100; display:flex; align-i
 .sticky-cta-btns { display:flex; gap:12px; }
 
 /* Hero */
-#hero { position:relative; z-index:1; min-height:100vh; display:flex; align-items:center; padding:120px 60px 80px; overflow:hidden; }
+#hero { position:relative; z-index:1; min-height:90vh; display:flex; align-items:center; padding:40px 60px 80px; overflow:hidden; }
 .hero-content { max-width:760px; animation:fadeUp 1.2s cubic-bezier(0.16,1,0.3,1) both; }
 .hero-eyebrow { font-family:'Syne',sans-serif; font-size:0.78rem; font-weight:700; letter-spacing:4px; text-transform:uppercase; color:var(--blue-bright); margin-bottom:24px; display:flex; align-items:center; gap:12px; }
 .hero-eyebrow::before { content:''; width:40px; height:1px; background:var(--blue-bright); display:inline-block; }
@@ -462,6 +462,22 @@ footer { position:relative; z-index:1; background:#030609; padding:50px 60px 30p
 
 <main id="main">
 
+<!-- BREADCRUMB — visible to Googlebot, helps crawl path & SERP breadcrumb display -->
+<nav aria-label="Breadcrumb" style="position:relative;z-index:1;padding:100px 60px 0;background:var(--dark);">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList" style="display:flex;align-items:center;gap:8px;list-style:none;font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--grey);">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="/" style="color:var(--grey);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#3d8eff'" onmouseout="this.style.color='#8a96b0'"><span itemprop="name">Home</span></a>
+      <meta itemprop="position" content="1" />
+    </li>
+    <li aria-hidden="true" style="color:rgba(138,150,176,0.35);">›</li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span itemprop="name" style="color:var(--blue-bright);">SEO Services</span>
+      <meta itemprop="item" content="https://redwandigital.com/seo-services.html" />
+      <meta itemprop="position" content="2" />
+    </li>
+  </ol>
+</nav>
+
 <!-- HERO -->
 <section id="hero" aria-labelledby="hero-title">
 <div class="hero-content">
@@ -609,6 +625,88 @@ Get Free SEO Audit
 </div>
 </div>
 </section>
+
+<!-- SEO PACKAGES — high buyer-intent section -->
+<section id="packages" aria-labelledby="packages-heading" style="background:var(--dark);">
+<div class="reveal">
+  <div class="section-eyebrow">Transparent Pricing</div>
+  <h2 id="packages-heading" class="section-title">SEO <span class="highlight">PACKAGES</span> FOR SMALL BUSINESS</h2>
+  <p class="section-sub" style="margin-top:12px;">Affordable SEO packages in Bangladesh with no hidden fees, no long-term lock-in. Every package starts with a free audit — we build your custom plan from there.</p>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px;" class="pkg-grid">
+
+  <!-- Starter -->
+  <div class="service-card reveal" style="text-align:left;">
+    <div class="service-num">STARTER</div>
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:2px;background:linear-gradient(90deg,var(--blue),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:16px 0 4px;">Custom</div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;margin-bottom:28px;">Message for Quote</div>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Full SEO audit</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Keyword research (10 target keywords)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>On-page SEO (up to 5 pages)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Technical SEO fixes</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Google Search Console setup</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Monthly progress report</li>
+      <li style="font-size:0.85rem;color:rgba(138,150,176,0.35);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;">—</span>Link building</li>
+      <li style="font-size:0.85rem;color:rgba(138,150,176,0.35);display:flex;gap:10px;align-items:flex-start;"><span style="flex-shrink:0;">—</span>Content creation</li>
+    </ul>
+    <a href="https://wa.me/8801886903797?text=Hi%2C%20I%27m%20interested%20in%20the%20Starter%20SEO%20package" target="_blank" rel="noopener noreferrer" class="btn-outline" style="display:block;text-align:center;padding:13px 24px;">Get Starter Quote →</a>
+  </div>
+
+  <!-- Growth — highlighted -->
+  <div class="service-card reveal" style="text-align:left;border-color:rgba(26,111,255,0.4);background:rgba(11,21,48,0.7);position:relative;">
+    <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--accent));"></div>
+    <div style="position:absolute;top:20px;right:20px;font-family:'Syne',sans-serif;font-size:0.65rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;background:linear-gradient(135deg,var(--blue),var(--accent));color:#fff;padding:4px 10px;border-radius:2px;">MOST POPULAR</div>
+    <div class="service-num">GROWTH</div>
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:2px;background:linear-gradient(90deg,var(--blue),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:16px 0 4px;">Custom</div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;margin-bottom:28px;">Message for Quote</div>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Everything in Starter</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Keyword research (25 target keywords)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>On-page SEO (up to 15 pages)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>White-hat link building (5 links/month)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Local SEO + Google Business Profile</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>2 SEO blog posts/month</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Detailed monthly ranking report</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>WhatsApp direct access</li>
+    </ul>
+    <a href="https://wa.me/8801886903797?text=Hi%2C%20I%27m%20interested%20in%20the%20Growth%20SEO%20package" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:block;text-align:center;padding:13px 24px;"><span>Get Growth Quote →</span></a>
+  </div>
+
+  <!-- Authority -->
+  <div class="service-card reveal" style="text-align:left;">
+    <div class="service-num">AUTHORITY</div>
+    <div style="font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:2px;background:linear-gradient(90deg,var(--blue),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin:16px 0 4px;">Custom</div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:2px;color:var(--grey);text-transform:uppercase;margin-bottom:28px;">Message for Quote</div>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Everything in Growth</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Keyword research (50+ keywords)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Full site on-page optimization</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Aggressive link building (10+ links/month)</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>4 SEO blog posts/month</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Competitor ranking analysis monthly</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>International SEO targeting</li>
+      <li style="font-size:0.85rem;color:var(--grey);display:flex;gap:10px;align-items:flex-start;"><span style="color:#00e676;flex-shrink:0;">✓</span>Priority WhatsApp support</li>
+    </ul>
+    <a href="https://wa.me/8801886903797?text=Hi%2C%20I%27m%20interested%20in%20the%20Authority%20SEO%20package" target="_blank" rel="noopener noreferrer" class="btn-outline" style="display:block;text-align:center;padding:13px 24px;">Get Authority Quote →</a>
+  </div>
+
+</div>
+<p style="text-align:center;margin-top:32px;font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(138,150,176,0.45);" class="reveal">✦ All packages include free audit · No contract · Cancel anytime · Full transparency</p>
+<style>@media(max-width:900px){.pkg-grid{grid-template-columns:1fr !important;}}</style>
+</section>
+
+<!-- MID-PAGE CTA STRIP -->
+<div style="position:relative;z-index:1;background:linear-gradient(135deg,rgba(26,111,255,0.12),rgba(0,212,255,0.06));border-top:1px solid rgba(26,111,255,0.2);border-bottom:1px solid rgba(26,111,255,0.2);padding:40px 60px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;" class="reveal">
+  <div>
+    <div style="font-family:'Syne',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--blue-bright);margin-bottom:8px;">Free · No Commitment</div>
+    <p style="font-family:'Bebas Neue',sans-serif;font-size:1.8rem;letter-spacing:2px;color:var(--white);margin:0;">NOT SURE WHICH PACKAGE? LET US AUDIT FIRST.</p>
+  </div>
+  <a href="https://wa.me/8801886903797?text=Hi%2C%20I%20want%20a%20free%20SEO%20audit%20for%20my%20website" target="_blank" rel="noopener noreferrer" class="btn-wa" style="flex-shrink:0;">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp for Free Audit
+  </a>
+</div>
 
 <!-- TESTIMONIALS -->
 <section id="testimonials" aria-labelledby="testimonials-heading">
