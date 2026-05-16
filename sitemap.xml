@@ -216,4 +216,20 @@
     </image:image>
   </url>
 
+  <!-- ══════════════════════════════════════════════════
+       BLOG POST — AI MARKETING TOOLS 2026  |  Priority: 0.85  |  Crawl: Monthly
+       Rising AI keyword cluster — ChatGPT marketing, Canva AI, HubSpot AI
+  ══════════════════════════════════════════════════ -->
+  <url>
+    <loc>https://redwandigital.com/ai-marketing-tools-2026.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://redwandigital.com/og-image.png</image:loc>
+      <image:title>3 AI Marketing Tools Smart Digital Marketers Are Using in 2026 — Redwan DigitalCo</image:title>
+      <image:caption>ChatGPT, Canva AI, and HubSpot AI — practical use cases, time-saving tips, and an honest comparison for digital marketers and small business owners in 2026.</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
